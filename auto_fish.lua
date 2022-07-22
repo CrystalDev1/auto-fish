@@ -15,13 +15,12 @@ end)
 local g = _G
 g['scriptValue'] = (g['scriptValue'] and g["scriptValue"] + 1) or 1
 local ScriptValue = g['scriptValue']
--- aaa
+
 local rs = game:GetService("RunService")
 while true do 
     rs.Heartbeat:Wait()
     if ScriptValue == g['scriptValue'] then
-        if toggled then 
-            print'fish?'
+        if toggled then
             game:GetService("ReplicatedStorage").Modules.GlobalInit.RemoteEvents.PlayerCatchFish:FireServer()
             wait(12)
         end 
