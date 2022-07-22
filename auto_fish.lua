@@ -6,7 +6,7 @@ uis.InputBegan:Connect(function(key, processed)
         return
     end
 
-    if key.KeyCode == Enum.KeyCode.L then 
+    if key.KeyCode == Enum.KeyCode.L then -- Change the letter after "Enum.Keycode." to change the start/stop key
         toggled = not toggled
     end
     
